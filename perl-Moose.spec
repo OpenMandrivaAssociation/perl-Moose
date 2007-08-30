@@ -15,6 +15,8 @@ BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Sub::Exporter)
 BuildRequires:	perl(Class::MOP)
+BuildRequires:	perl(Test::LongString)
+BuildRequires:	perl(Test::Exception)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
