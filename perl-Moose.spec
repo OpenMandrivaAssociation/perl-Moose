@@ -1,6 +1,6 @@
 %define module	Moose
 %define name	perl-%{module}
-%define version 0.26
+%define version 0.29
 %define release %mkrel 1
 
 Name:		%{name}
@@ -8,13 +8,12 @@ Version:	%{version}
 Release:	%{release}
 Summary:	A complete modern object system for Perl 5
 URL:		http://search.cpan.org/dist/%{module}
-Source:		http://search.cpan.org/CPAN/authors/id/S/ST/STEVAN/%{module}-%{version}.tar.gz
+Source:		http://search.cpan.org/CPAN/authors/id/G/GR/GRODITI/%{module}-%{version}.tar.gz
 License:	GPL
 Group:		Development/Perl
-BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Sub::Exporter)
-BuildRequires:	perl(Class::MOP)
+BuildRequires:	perl(Class::MOP) >= 0.43
 BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Test::Exception)
 BuildArch:	noarch
@@ -27,15 +26,15 @@ Moose is an extension of the Perl 5 object system.
 %setup -q -n %{module}-%{version}
 
 %build
-%{__perl} Build.PL installdirs=vendor
-./Build CFLAGS="%{optflags}"
+%{__perl} Makefile.PL INSTALLDIRS=vendor
+%make
 
 %check
-./Build test
+%__make test
 
 %install
 %{__rm} -rf %{buildroot}
-./Build install destdir=%{buildroot}
+%makeinstall_std
 
 %clean
 %{__rm} -rf %{buildroot}
