@@ -17,7 +17,6 @@ BuildRequires:	perl(Class::MOP) >= 0.49
 BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Test::Exception)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Moose is an extension of the Perl 5 object system.
