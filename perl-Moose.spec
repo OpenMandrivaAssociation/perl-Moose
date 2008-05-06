@@ -1,7 +1,7 @@
 %define module	Moose
 %define name	perl-%{module}
 %define version 0.43
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name:		%{name}
 Version:	%{version}
@@ -16,7 +16,6 @@ BuildRequires:	perl(Sub::Exporter)
 BuildRequires:	perl(Class::MOP) >= 0.49
 BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Test::Exception)
-BuildRequires:	perl(MRO::Compat)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
