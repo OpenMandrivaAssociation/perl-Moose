@@ -16,6 +16,7 @@ BuildRequires:	perl(Sub::Exporter)
 BuildRequires:	perl(Class::MOP) >= 0.49
 BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Test::Exception)
+BuildRequires:	perl(MRO::Compat)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
