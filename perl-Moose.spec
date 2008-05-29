@@ -13,7 +13,7 @@ License:	GPL
 Group:		Development/Perl
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Sub::Exporter)
-BuildRequires:	perl(Class::MOP) >= 0.49
+BuildRequires:	perl(Class::MOP) >= 0.57
 BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Test::Exception)
 BuildArch:	noarch
@@ -26,7 +26,7 @@ Moose is an extension of the Perl 5 object system.
 %setup -q -n %{module}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+%{__perl} Makefile.PL INSTALLDIRS=vendor --skipdeps
 %make
 
 %check
