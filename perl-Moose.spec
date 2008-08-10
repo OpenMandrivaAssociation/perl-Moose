@@ -1,6 +1,6 @@
 %define module	Moose
 %define name	perl-%{module}
-%define version 0.54
+%define version 0.55
 %define release %mkrel 1
 
 Name:		%{name}
@@ -13,7 +13,7 @@ License:	GPL
 Group:		Development/Perl
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Sub::Exporter)
-BuildRequires:	perl(Class::MOP) >= 0.57
+BuildRequires:	perl(Class::MOP) >= 0.64
 BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Test::Exception)
 BuildArch:	noarch
