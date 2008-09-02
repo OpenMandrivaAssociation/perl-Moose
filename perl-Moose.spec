@@ -13,9 +13,10 @@ License:	GPL
 Group:		Development/Perl
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Sub::Exporter)
-BuildRequires:	perl(Class::MOP) >= 0.64
+BuildRequires:	perl(Class::MOP) >= 0.65
 BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Test::Exception)
+BuildRequires:	perl(List::MoreUtils)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
