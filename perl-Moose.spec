@@ -1,6 +1,6 @@
 %define module	Moose
 %define name	perl-%{module}
-%define version 0.59
+%define version 0.60
 %define release %mkrel 1
 
 Name:		%{name}
@@ -8,12 +8,12 @@ Version:	%{version}
 Release:	%{release}
 Summary:	A complete modern object system for Perl 5
 URL:		http://search.cpan.org/dist/%{module}
-Source:		http://search.cpan.org/CPAN/authors/id/S/ST/STEVAN/%{module}-%{version}.tar.gz
+Source:		http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{module}-%{version}.tar.gz
 License:	GPL
 Group:		Development/Perl
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Sub::Exporter)
-BuildRequires:	perl(Class::MOP) >= 0.67
+BuildRequires:	perl(Class::MOP) >= 0.68
 BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(List::MoreUtils)
