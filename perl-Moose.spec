@@ -11,16 +11,20 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires:	perl(Sub::Name)
-BuildRequires:	perl(Sub::Exporter)
-BuildRequires:	perl(Class::MOP) >= 0.68
-BuildRequires:	perl(Test::LongString)
-BuildRequires:	perl(Test::Exception)
+BuildRequires:	perl(Class::MOP)     >= 0.930.0
 BuildRequires:	perl(List::MoreUtils)
-Requires:	perl(Sub::Name)
-Provides:   perl-Moose-implementation
+BuildRequires:	perl(Sub::Exporter)
+BuildRequires:	perl(Sub::Name)
+BuildRequires:	perl(Task::Weaken)
+BuildRequires:	perl(Test::Exception)
+BuildRequires:	perl(Test::LongString)
+BuildRequires:	perl(Try::Tiny)
+
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
+
+Requires:	perl(Sub::Name)
+Provides:   perl-Moose-implementation
 
 %description
 Moose is an extension of the Perl 5 object system.
