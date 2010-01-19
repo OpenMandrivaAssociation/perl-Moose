@@ -1,5 +1,5 @@
 %define upstream_name	 Moose
-%define upstream_version 0.93
+%define upstream_version 0.94
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -49,9 +49,7 @@ Moose is an extension of the Perl 5 object system.
 %files
 %defattr(-,root,root)
 %doc Changes README
-%{perl_vendorlib}/Moose
-%{perl_vendorlib}/Moose.pm
-%{perl_vendorlib}/oose.pm
-%{perl_vendorlib}/Test/Moose.pm
+%{perl_vendorlib}/*
 %{_mandir}/*/*
-
+/usr/lib/debug/*
+/usr/src/debug/*
