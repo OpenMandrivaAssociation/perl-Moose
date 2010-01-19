@@ -19,8 +19,8 @@ BuildRequires:	perl(Task::Weaken)
 BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Try::Tiny)
+BuildRequires:	perl-devel
 
-BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 Requires:	perl(Sub::Name)
