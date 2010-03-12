@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 1
+Release:	%mkrel 2
 
 Summary:	A complete modern object system for Perl 5
 License:    GPL+ or Artistic
@@ -37,7 +37,7 @@ Moose is an extension of the Perl 5 object system.
 %make
 
 %check
-%__make test
+%make test
 
 %install
 %{__rm} -rf %{buildroot}
@@ -51,5 +51,3 @@ Moose is an extension of the Perl 5 object system.
 %doc Changes README
 %{perl_vendorlib}/*
 %{_mandir}/*/*
-/usr/lib/debug/*
-/usr/src/debug/*
