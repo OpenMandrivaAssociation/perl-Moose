@@ -17,6 +17,7 @@ BuildRequires:	perl(Sub::Exporter)
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Task::Weaken)
 BuildRequires:	perl(Test::Exception)
+BuildRequires:	perl(Test::Requires)
 BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Try::Tiny)
 BuildRequires:	perl-devel
