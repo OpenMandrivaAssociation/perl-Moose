@@ -1,5 +1,5 @@
 %define upstream_name	 Moose
-%define upstream_version 1.12
+%define upstream_version 1.15
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
