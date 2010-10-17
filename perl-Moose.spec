@@ -11,9 +11,13 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires:	perl(Class::MOP)     >= 0.930.0
-BuildRequires:	perl(List::MoreUtils)
-BuildRequires:	perl(Sub::Exporter)
+BuildRequires:	perl(Class::MOP)     >= 1.090.0
+BuildRequires:	perl(Data::OptList)
+BuildRequires:	perl(List::MoreUtils) >= 0.120.0
+BuildRequires:	perl(Package::DeprecationManager) >= 0.040.0
+BuildRequires:	perl(Params::Util)
+BuildRequires:	perl(Scalar::Util) >= 1.190.0
+BuildRequires:	perl(Sub::Exporter) >= 0.098.0
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Task::Weaken)
 BuildRequires:	perl(Test::Exception)
