@@ -24,6 +24,7 @@ BuildRequires:	perl(Test::Exception) >= 0.270
 BuildRequires:	perl(Test::More) >= 0.880
 BuildRequires:	perl(Test::Requires) >= 0.050
 BuildRequires:	perl(Test::LongString)
+BuildRequires:	perl(Test::Fatal)
 BuildRequires:	perl(Try::Tiny) >= 0.020.0
 BuildRequires:	perl-devel
 
