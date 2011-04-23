@@ -1,5 +1,5 @@
 %define upstream_name	 Moose
-%define upstream_version 1.24
+%define upstream_version 2.0001
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -13,6 +13,7 @@ Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{
 
 BuildRequires:	perl(Class::MOP)     >= 1.100.0
 BuildRequires:	perl(Data::OptList)
+BuildRequires:	perl(Eval::Closure)
 BuildRequires:	perl(List::MoreUtils) >= 0.120.0
 BuildRequires:	perl(Package::DeprecationManager) >= 0.070.0
 BuildRequires:	perl(Params::Util) >= 1.000.0
@@ -20,6 +21,7 @@ BuildRequires:	perl(Scalar::Util) >= 1.190.0
 BuildRequires:	perl(Sub::Exporter) >= 0.098.0
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Task::Weaken)
+BuildRequires:	perl(Test::Output)
 BuildRequires:	perl(Test::Exception) >= 0.270
 BuildRequires:	perl(Test::More) >= 0.880
 BuildRequires:	perl(Test::Requires) >= 0.050
@@ -28,7 +30,6 @@ BuildRequires:	perl(Test::Fatal)
 BuildRequires:	perl(Try::Tiny) >= 0.020.0
 BuildRequires:	perl-devel
 
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 Requires:	perl(Sub::Name)
 Provides:   perl-Moose-implementation
@@ -47,7 +48,6 @@ Moose is an extension of the Perl 5 object system.
 %make test
 
 %install
-%{__rm} -rf %{buildroot}
 %makeinstall_std
 
 %clean
@@ -56,5 +56,6 @@ Moose is an extension of the Perl 5 object system.
 %files
 %defattr(-,root,root)
 %doc Changes README
+%{_bindir}/moose-outdated
 %{perl_vendorlib}/*
 %{_mandir}/*/*
