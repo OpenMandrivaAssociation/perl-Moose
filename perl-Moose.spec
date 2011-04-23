@@ -33,6 +33,7 @@ BuildRequires:	perl-devel
 
 Requires:	perl(Sub::Name)
 Provides:   perl-Moose-implementation
+Buildarch:	noarch
 
 %description
 Moose is an extension of the Perl 5 object system.
