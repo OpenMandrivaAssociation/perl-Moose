@@ -21,7 +21,7 @@ BuildRequires:	perl(Scalar::Util) >= 1.190.0
 BuildRequires:	perl(Sub::Exporter) >= 0.098.0
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Task::Weaken)
-BuildRequires:	perl(Test::Output)
+#BuildRequires:	perl(Test::Output)
 BuildRequires:	perl(Test::Exception) >= 0.270
 BuildRequires:	perl(Test::More) >= 0.880
 BuildRequires:	perl(Test::Requires) >= 0.050
