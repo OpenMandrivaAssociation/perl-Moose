@@ -60,3 +60,5 @@ Moose is an extension of the Perl 5 object system.
 %{_bindir}/moose-outdated
 %{perl_vendorlib}/*
 %{_mandir}/*/*
+/usr/src/debug/%{upstream_name}-%{upstream_version}
+%{_libdir}/*
