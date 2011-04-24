@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
+Release:	%mkrel 3
 
 Summary:	A complete modern object system for Perl 5
 License:    GPL+ or Artistic
@@ -29,9 +29,8 @@ BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Test::Fatal)
 BuildRequires:	perl(Try::Tiny) >= 0.020.0
 BuildRequires:	perl-devel
-
-
 Requires:	perl(Sub::Name)
+Requires:	perl(Moose::Meta::Attribute::Custom::Trait::Chained)
 Provides:   perl-Moose-implementation
 
 %description
