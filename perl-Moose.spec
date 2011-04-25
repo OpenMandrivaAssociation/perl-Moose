@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 3
+Release:	%mkrel 4
 
 Summary:	A complete modern object system for Perl 5
 License:    GPL+ or Artistic
