@@ -48,6 +48,8 @@ Moose is an extension of the Perl 5 object system.
 
 %install
 %makeinstall_std
+# fix conflict with Class::MOP
+rm -f %{buildroot}%{_mandir}/man3/metaclass.3*
 
 %clean
 %{__rm} -rf %{buildroot}
