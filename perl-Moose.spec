@@ -12,9 +12,12 @@ URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(Data::OptList)
+BuildRequires:	perl(Devel::GlobalDestruction)
 BuildRequires:	perl(Eval::Closure)
 BuildRequires:	perl(List::MoreUtils) >= 0.120.0
+BuildRequires:	perl(MRO::Compat)
 BuildRequires:	perl(Package::DeprecationManager) >= 0.070.0
+BuildRequires:	perl(Package::Stash)
 BuildRequires:	perl(Params::Util) >= 1.000.0
 BuildRequires:	perl(Scalar::Util) >= 1.190.0
 BuildRequires:	perl(Sub::Exporter) >= 0.098.0
