@@ -30,7 +30,6 @@ BuildRequires:	perl(Test::Fatal)
 BuildRequires:	perl(Try::Tiny) >= 0.020.0
 BuildRequires:	perl-devel
 Requires:	perl(Sub::Name)
-Requires:	perl(Moose::Meta::Attribute::Custom::Trait::Chained)
 Provides:   perl-Moose-implementation
 
 %description
