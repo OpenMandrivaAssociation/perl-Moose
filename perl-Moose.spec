@@ -11,7 +11,6 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires:	perl(Class::MOP)     >= 1.100.0
 BuildRequires:	perl(Data::OptList)
 BuildRequires:	perl(Eval::Closure)
 BuildRequires:	perl(List::MoreUtils) >= 0.120.0
@@ -31,6 +30,8 @@ BuildRequires:	perl(Try::Tiny) >= 0.020.0
 BuildRequires:	perl-devel
 Requires:	perl(Sub::Name)
 Provides:   perl-Moose-implementation
+Provides:   perl-Class-MOP
+Obsoletes:  perl-Class-MOP
 
 %description
 Moose is an extension of the Perl 5 object system.
@@ -47,8 +48,6 @@ Moose is an extension of the Perl 5 object system.
 
 %install
 %makeinstall_std
-# fix conflict with Class::MOP
-rm -f %{buildroot}%{_mandir}/man3/metaclass.3*
 
 %clean
 %{__rm} -rf %{buildroot}
