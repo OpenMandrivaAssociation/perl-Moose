@@ -1,9 +1,9 @@
 %define upstream_name	 Moose
-%define upstream_version 2.0001
+%define upstream_version 2.0002
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 5
+Release:	%mkrel 1
 
 Summary:	A complete modern object system for Perl 5
 License:    GPL+ or Artistic
