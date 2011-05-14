@@ -1,16 +1,15 @@
 %define upstream_name	 Moose
 %define upstream_version 2.0006
+%define _requires_exceptions perl(Moose::Conflicts)
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 1
-
+Release:	%mkrel 2
 Summary:	A complete modern object system for Perl 5
 License:    GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{upstream_version}.tar.gz
-
 BuildRequires:	perl(Data::OptList)
 BuildRequires:	perl(Devel::GlobalDestruction)
 BuildRequires:	perl(Eval::Closure)
