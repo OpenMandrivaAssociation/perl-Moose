@@ -1,10 +1,10 @@
 %define upstream_name	 Moose
-%define upstream_version 2.0006
+%define upstream_version 2.0007
 %define _requires_exceptions perl(Moose::Conflicts)
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
+Release:	%mkrel 1
 Summary:	A complete modern object system for Perl 5
 License:    GPL+ or Artistic
 Group:		Development/Perl
