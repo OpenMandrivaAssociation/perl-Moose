@@ -1,5 +1,5 @@
 %define upstream_name	 Moose
-%define upstream_version 2.0007
+%define upstream_version 2.0010
 %define _requires_exceptions perl(Moose::Conflicts)
 
 Name:		perl-%{upstream_name}
