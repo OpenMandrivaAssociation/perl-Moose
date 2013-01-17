@@ -15,8 +15,10 @@ License:    GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DO/DOY/%{upstream_name}-%{upstream_version}.tar.gz
+BuildRequires:	perl(Class::Load)
 BuildRequires:	perl(Data::OptList)
 BuildRequires:	perl(Devel::GlobalDestruction)
+BuildRequires:	perl(Dist::CheckConflicts)
 BuildRequires:	perl(Eval::Closure)
 BuildRequires:	perl(List::MoreUtils) >= 0.120.0
 BuildRequires:	perl(MRO::Compat)
