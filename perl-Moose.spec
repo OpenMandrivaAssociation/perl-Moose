@@ -2,14 +2,14 @@
 %define upstream_version 2.0604
 
 %if %{_use_internal_dependency_generator}
-%define __noautoreq 'perl\\(Moose::Conflicts\\)'
+%define __noautoreq 'perl\\(Moose::(Conflicts|Error::Util)\\)'
 %else
 %define _requires_exceptions perl(Moose::Conflicts)
 %endif
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Release:	7
 Summary:	A complete modern object system for Perl 5
 License:    GPL+ or Artistic
 Group:		Development/Perl
