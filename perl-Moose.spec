@@ -1,5 +1,5 @@
 %define upstream_name	 Moose
-%define upstream_version 2.0010
+%define upstream_version 2.0604
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Moose::Conflicts\\)'
@@ -14,7 +14,7 @@ Summary:	A complete modern object system for Perl 5
 License:    GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/D/DO/DOY/%{upstream_name}-%{upstream_version}.tar.gz
 BuildRequires:	perl(Data::OptList)
 BuildRequires:	perl(Devel::GlobalDestruction)
 BuildRequires:	perl(Eval::Closure)
