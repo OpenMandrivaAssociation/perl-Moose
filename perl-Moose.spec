@@ -9,7 +9,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	7
+Release:	8
 Summary:	A complete modern object system for Perl 5
 License:    GPL+ or Artistic
 Group:		Development/Perl
