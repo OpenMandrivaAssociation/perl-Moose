@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   Moose-2.0604.tar.gz: 797c0fa987e5ecf50335813f31c7d8ae88c88e20
+sources:
+  Moose-2.1213.tar.gz: 8f199e28be343610cf0c34ee0512ec977d7f151e
