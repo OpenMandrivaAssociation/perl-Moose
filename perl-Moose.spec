@@ -1,12 +1,6 @@
 %define modname	Moose
 %define modver	2.2010
 
-%if %{_use_internal_dependency_generator}
-%define __noautoreq 'perl\\(Moose::(Conflicts|Error::Util)\\)'
-%else
-%define _requires_exceptions perl(Moose::Conflicts)
-%endif
-
 Summary:	A complete modern object system for Perl 5
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
@@ -42,6 +36,8 @@ Requires:	perl(Sub::Name)
 Provides:	perl-Moose-implementation
 Obsoletes:	perl-Class-MOP <= 1.120.0
 Provides:	perl-Class-MOP = 1.120.0
+# Not caught by dependency generator
+Provides:	perl(Moose::Conflicts) = %{version}
 
 %description
 Moose is an extension of the Perl 5 object system.
