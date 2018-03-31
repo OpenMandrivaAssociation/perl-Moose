@@ -1,5 +1,5 @@
 %define modname	Moose
-%define modver	2.1213
+%define modver	2.2010
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Moose::(Conflicts|Error::Util)\\)'
@@ -10,11 +10,11 @@
 Summary:	A complete modern object system for Perl 5
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	4
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:	http://search.cpan.org/dist/%{modname}
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DO/DOY/%{modname}-%{modver}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/Moose-%{modver}.tar.gz
 BuildRequires:	perl(Class::Load)
 BuildRequires:	perl(Data::OptList)
 BuildRequires:	perl(Devel::GlobalDestruction)
@@ -63,6 +63,5 @@ Moose is an extension of the Perl 5 object system.
 %files
 %doc Changes 
 %{_bindir}/moose-outdated
-%{perl_vendorlib}/*
+%{perl_vendorarch}/*
 %{_mandir}/man3/*
-
