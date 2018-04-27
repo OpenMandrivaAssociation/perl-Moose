@@ -9,6 +9,7 @@ License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:	http://search.cpan.org/dist/%{modname}
 Source0:	http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/Moose-%{modver}.tar.gz
+Patch0:		Moose-2.2010-buildfix.patch
 BuildRequires:	perl(Class::Load)
 BuildRequires:	perl(Data::OptList)
 BuildRequires:	perl(Devel::GlobalDestruction)
@@ -43,7 +44,7 @@ Provides:	perl(Moose::Conflicts) = %{version}
 Moose is an extension of the Perl 5 object system.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -n %{modname}-%{modver}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor --skipdeps

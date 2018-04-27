@@ -1,0 +1,13 @@
+diff -up Moose-2.2010/Makefile.PL.omv~ Moose-2.2010/Makefile.PL
+--- Moose-2.2010/Makefile.PL.omv~	2018-04-28 01:50:09.679060195 +0200
++++ Moose-2.2010/Makefile.PL	2018-04-28 01:50:12.596991593 +0200
+@@ -8,9 +8,6 @@ use warnings;
+ 
+ # Secondary compile testing via ExtUtils::HasCompiler
+ use lib 'inc';
+-use ExtUtils::HasCompiler 0.014 'can_compile_loadable_object';
+-die 'This distribution requires a working compiler'
+-    unless can_compile_loadable_object(quiet => 1);
+ 
+ use ExtUtils::MakeMaker;
+ check_conflicts();
