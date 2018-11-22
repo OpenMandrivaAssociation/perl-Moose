@@ -1,13 +1,13 @@
 %define modname	Moose
-%define modver	2.2010
+%define modver	2.2011
 
 Summary:	A complete modern object system for Perl 5
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:	http://search.cpan.org/dist/%{modname}
+Url:		http://metacpan.org/pod/Moose
 Source0:	http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/Moose-%{modver}.tar.gz
 Patch0:		Moose-2.2010-buildfix.patch
 BuildRequires:	perl(Class::Load)
