@@ -1,6 +1,11 @@
 %define modname	Moose
 %define modver	2.2201
 
+%ifarch %{x86_64}
+# FIXME debuginfo bug workaround
+%global _debugsource_template %{nil}
+%endif
+
 Summary:	A complete modern object system for Perl 5
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
