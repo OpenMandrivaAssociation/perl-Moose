@@ -1,5 +1,5 @@
 %define modname	Moose
-%define modver	2.2012
+%define modver	2.2201
 
 Summary:	A complete modern object system for Perl 5
 Name:		perl-%{modname}
