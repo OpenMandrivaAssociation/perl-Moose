@@ -1,5 +1,4 @@
 %define modname	Moose
-%define modver	2.2201
 
 %ifarch %{x86_64}
 # FIXME debuginfo bug workaround
@@ -8,12 +7,12 @@
 
 Summary:	A complete modern object system for Perl 5
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
+Version:	2.2202
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Moose
-Source0:	http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/Moose-%{modver}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/Moose-%{version}.tar.gz
 Patch0:		Moose-2.2010-buildfix.patch
 BuildRequires:	perl(Class::Load)
 BuildRequires:	perl(Data::OptList)
@@ -49,10 +48,10 @@ Provides:	perl(Moose::Conflicts) = %{version}
 Moose is an extension of the Perl 5 object system.
 
 %prep
-%autosetup -n %{modname}-%{modver}
+%autosetup -n %{modname}-%{version}
+perl Makefile.PL INSTALLDIRS=vendor --skipdeps
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor --skipdeps
 %make_build
 
 #check
