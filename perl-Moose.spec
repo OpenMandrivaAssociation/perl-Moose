@@ -7,7 +7,7 @@
 
 Summary:	A complete modern object system for Perl 5
 Name:		perl-%{modname}
-Version:	2.2202
+Version:	2.2203
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
