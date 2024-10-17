@@ -11,7 +11,7 @@ Version:	2.2206
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Moose
+Url:		https://metacpan.org/pod/Moose
 Source0:	http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/Moose-%{version}.tar.gz
 Patch0:		Moose-2.2010-buildfix.patch
 BuildRequires:	perl(Class::Load)
