@@ -27,7 +27,7 @@ BuildRequires:	perl(Task::Weaken)
 #BuildRequires:	perl(Test::Output)
 BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Test::More) >= 0.880
-BuildRequires:	perl(Test::Requires) >= 0.050
+BuildRequires:	perl(Test::Requires)
 BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Test::Fatal)
 BuildRequires:	perl(Try::Tiny) >= 0.020.0
