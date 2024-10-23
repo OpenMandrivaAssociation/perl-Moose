@@ -3,7 +3,7 @@
 Summary:	A complete modern object system for Perl 5
 Name:		perl-%{modname}
 Version:	2.2207
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Moose
@@ -15,27 +15,25 @@ BuildRequires:	perl(Devel::GlobalDestruction)
 BuildRequires:	perl(Devel::StackTrace)
 BuildRequires:	perl(Dist::CheckConflicts)
 BuildRequires:	perl(Eval::Closure)
-BuildRequires:	perl(List::MoreUtils) >= 0.120.0
+BuildRequires:	perl(List::MoreUtils)
 BuildRequires:	perl(MRO::Compat)
-BuildRequires:	perl(Package::DeprecationManager) >= 0.070.0
+BuildRequires:	perl(Package::DeprecationManager)
 BuildRequires:	perl(Package::Stash)
-BuildRequires:	perl(Params::Util) >= 1.000.0
-BuildRequires:	perl(Scalar::Util) >= 1.190.0
-BuildRequires:	perl(Sub::Exporter) >= 0.098.0
+BuildRequires:	perl(Params::Util)
+BuildRequires:	perl(Scalar::Util)
+BuildRequires:	perl(Sub::Exporter)
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Task::Weaken)
 #BuildRequires:	perl(Test::Output)
 BuildRequires:	perl(Test::Exception)
-BuildRequires:	perl(Test::More) >= 0.880
+BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test::Requires)
 BuildRequires:	perl(Test::LongString)
 BuildRequires:	perl(Test::Fatal)
-BuildRequires:	perl(Try::Tiny) >= 0.020.0
+BuildRequires:	perl(Try::Tiny)
 BuildRequires:	perl-devel
 Requires:	perl(Sub::Name)
 Provides:	perl-Moose-implementation
-Obsoletes:	perl-Class-MOP <= 1.120.0
-Provides:	perl-Class-MOP = 1.120.0
 # Not caught by dependency generator
 Provides:	perl(Moose::Conflicts) = %{version}
 
