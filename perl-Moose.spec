@@ -3,7 +3,7 @@
 Summary:	A complete modern object system for Perl 5
 Name:		perl-%{modname}
 Version:	2.2207
-Release:	2
+Release:	3
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Moose
