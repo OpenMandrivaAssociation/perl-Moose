@@ -9,6 +9,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/Moose
 Source0:	http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/Moose-%{version}.tar.gz
 Patch0:		Moose-2.2010-buildfix.patch
+BuildRequires:	make
 BuildRequires:	perl(Class::Load)
 BuildRequires:	perl(Data::OptList)
 BuildRequires:	perl(Devel::GlobalDestruction)
